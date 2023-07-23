@@ -1,0 +1,3 @@
+const ERROR_TIME_OUT = 5000
+
+export {ERROR_TIME_OUT}

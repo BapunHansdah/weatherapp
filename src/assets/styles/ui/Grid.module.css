@@ -1,0 +1,17 @@
+.grid2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.grid2>div{
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid hsla(260,11%,85%,1);
+  justify-content: center;
+  align-items: center;
+}
