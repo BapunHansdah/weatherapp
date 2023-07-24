@@ -2,4 +2,6 @@
 	padding:0px 16px 0px 16px;
 	font-size: 12px;
 	color:red;
+	width: 90%;
+	word-break: break-all;
 }

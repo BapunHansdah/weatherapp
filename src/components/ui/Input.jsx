@@ -21,7 +21,11 @@ const Textinput = ({
             placeholder={placeholder}
             onChange={onChange}
           />
-          {error && <span className={styles.error}>{error+" ! "+ "Please try again."}</span>}
+          {error && 
+           <div 
+               className={styles.error}>
+               {error+" ! "+ "Please try again."}
+           </div>}
           </div>
   );
 };

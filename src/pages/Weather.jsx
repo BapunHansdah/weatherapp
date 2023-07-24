@@ -16,14 +16,14 @@ export default function Index({city,weatherInfo}){
 	return(
 		<>
 		  <div className="weatherView">
-				<img src={ `http://openweathermap.org/img/w/${weatherInfo.weather[0].icon}.png` ||Cloud} width={"100px"}/>
-				<Text text={`${weatherInfo.main.temp}°C`} textSize={"40px"} fontWeight="bold"/>
-				<Text text={weatherInfo.weather[0].description} fontWeight={"400"} />
-	            <TextWithIcon text={`${weatherInfo.name},${weatherInfo.sys.country}`} fontWeight={"400"} iconSize={"13px"} size={"10px"} icon={Pointer}/>
+				<img src={ `http://openweathermap.org/img/w/${weatherInfo?.weather[0].icon}.png` ||Cloud} width={"100px"}/>
+				<Text text={`${weatherInfo?.main.temp}°C`} textSize={"40px"} fontWeight="bold"/>
+				<Text text={weatherInfo?.weather[0].description} fontWeight={"400"} />
+	            <TextWithIcon text={`${weatherInfo?.name},${weatherInfo?.sys.country}`} fontWeight={"400"} iconSize={"13px"} size={"10px"} icon={Pointer}/>
           </div>
           <Grid>
-		        <TextWithIcon paragraph={"feels like"} fontWeight={"600"} icon={Thermometer} text={`${weatherInfo.main.feels_like}°C`} iconSize="30px"/>
-		        <TextWithIcon paragraph={"Humidity"} fontWeight={"600"} icon={Drop} text={weatherInfo.main.humidity} iconSize="30px"/>
+		        <TextWithIcon paragraph={"feels like"} fontWeight={"600"} icon={Thermometer} text={`${weatherInfo?.main.feels_like}°C`} iconSize="35px"/>
+		        <TextWithIcon paragraph={"Humidity"} fontWeight={"600"} icon={Drop} text={weatherInfo?.main.humidity} iconSize="35px"/>
           </Grid>
 	      </>
 		)
